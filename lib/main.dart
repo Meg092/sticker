@@ -80,20 +80,6 @@ class MyApp extends StatelessWidget {
             borderRadius: BorderRadius.all(Radius.circular(10)),
           ),
         ),
-        cardTheme: const CardTheme(
-          color: Colors.white,
-          elevation: 0,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.all(Radius.circular(10)),
-          ),
-        ),
-        dialogTheme: const DialogTheme(
-          actionsPadding: EdgeInsets.only(right: 10, bottom: 5),
-        ),
-        dividerTheme: DividerThemeData(
-          thickness: 1,
-          color: Colors.grey[200],
-        ),
       ),
     );
   }
