@@ -11,8 +11,8 @@ class StickerMapView extends GetView<PageLogic> {
     return Scaffold(
       body: Center(
         child: Obx(
-          () => controller.keeling.value
-              ? const CircularProgressIndicator(color: Colors.blueAccent)
+          () => controller.williamson.value
+              ? CircularProgressIndicator(color: Colors.pinkAccent[200])
               : buildError(),
         ),
       ),
@@ -26,7 +26,7 @@ class StickerMapView extends GetView<PageLogic> {
         children: [
           IconButton(
             onPressed: () {
-              controller.brnyj();
+              controller.haxkt();
             },
             icon: const Icon(
               Icons.restart_alt,

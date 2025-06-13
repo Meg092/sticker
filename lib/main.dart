@@ -9,12 +9,16 @@ import 'package:sticker/pages/sticker_add/sticker_add_binding.dart';
 import 'package:sticker/pages/sticker_add/sticker_add_view.dart';
 import 'package:sticker/pages/sticker_first/sticker_first_binding.dart';
 import 'package:sticker/pages/sticker_first/sticker_first_view.dart';
+import 'package:sticker/pages/sticker_map/sticker_map_binding.dart';
+import 'package:sticker/pages/sticker_map/sticker_map_view.dart';
 import 'package:sticker/pages/sticker_result/sticker_result_binding.dart';
 import 'package:sticker/pages/sticker_result/sticker_result_view.dart';
 import 'package:sticker/pages/sticker_second/sticker_second_binding.dart';
 import 'package:sticker/pages/sticker_second/sticker_second_view.dart';
 import 'package:sticker/pages/sticker_tab/sticker_tab_binding.dart';
 import 'package:sticker/pages/sticker_tab/sticker_tab_view.dart';
+
+import 'db_sticker/sticker_init.dart';
 
 Color primaryColor = const Color(0xffff8084);
 Color bgColor = const Color(0xfffafafa);
@@ -43,7 +47,7 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       getPages: Stickers,
-      initialRoute: '/stickerTab',
+      initialRoute: '/',
       theme: ThemeData(
         useMaterial3: true,
         primaryColor: primaryColor,
@@ -95,10 +99,12 @@ class MyApp extends StatelessWidget {
   }
 }
 List<GetPage<dynamic>> Stickers = [
+  GetPage(name: '/', page: () => const StickerMapView(), binding: StickerMapBinding()),
   GetPage(name: '/noNetwork', page: () => NoNetworkPage(), binding: NoNetworkBinding()),
   GetPage(name: '/stickerAdd', page: () => const StickerAddPage(), binding: StickerAddBinding()),
   GetPage(name: '/stickerFirst', page: () => StickerFirstPage(), binding: StickerFirstBinding()),
   GetPage(name: '/stickerResult', page: () => StickerResultPage(), binding: StickerResultBinding()),
+  GetPage(name: '/stickerHa', page: () => const StickerInit()),
   GetPage(name: '/stickerSecond', page: () => StickerSecondPage(), binding: StickerSecondBinding()),
   GetPage(name: '/stickerTab', page: () => StickerTabPage(), binding: StickerTabBinding()),
 ];

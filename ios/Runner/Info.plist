@@ -7,7 +7,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
-	<string>Sticker</string>
+	<string>VALIANT CPE</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -15,7 +15,7 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>sticker</string>
+	<string>VALIANT CPE</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
@@ -27,13 +27,13 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSCameraUsageDescription</key>
-	<string>Cameras are allowed to take photos</string>
+	<string>Please enable camera permission to take photos</string>
 	<key>NSMicrophoneUsageDescription</key>
-	<string>Microphones are allowed for taking photos</string>
+	<string>Please enable album permission to take photos</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>The pictures need to be saved to the album</string>
+	<string>Please allow camera access to save stickers</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>It is necessary to access the album to save the pictures</string>
+	<string>Please allow camera access to save stickers</string>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>
